@@ -3,460 +3,473 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Celonis Intelligence Brief — July 7, 2026</title>
+<title>Celonis Process Intelligence Sales Brief — July 6, 2026</title>
 <style>
-:root{--navy:#0d1b3d;--blue:#2d4cb8;--purple:#7b2d8b;--teal:#16a085;--orange:#c46916;--li:#0a66c2;--red:#c0392b;--bg:#f7f8fa;--text:#1a1f36;}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;padding:24px 24px 80px;}
-.wrap{max-width:1100px;margin:0 auto;}
-header{background:linear-gradient(135deg,#0d1b3d 0%,#2d4cb8 100%);color:#fff;border-radius:16px;padding:36px 40px;box-shadow:0 10px 30px rgba(13,27,61,.35);margin-bottom:16px;}
-header h1{font-size:28px;font-weight:800;}
-header p{opacity:.85;margin-top:6px;font-size:14px;}
-nav{position:sticky;top:0;z-index:50;background:var(--bg);padding:12px 0;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
-nav a{text-decoration:none;color:var(--navy);background:#fff;border:1px solid #e1e4ea;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.05);}
-nav a.active{background:var(--navy);color:#fff;border-color:var(--navy);}
-section{margin-bottom:48px;}
-.sec-title{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
-.sec-title h2{color:var(--navy);font-size:22px;font-weight:800;}
-.badge{width:34px;height:34px;border-radius:50%;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
-.sec-sub{color:#5a6072;font-size:14px;margin-bottom:18px;}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-.card{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);padding:20px;}
-.tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:1px;font-weight:700;border-radius:999px;padding:3px 10px;}
-.task-card{border-left:5px solid var(--purple);}
-.day{color:var(--purple);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:1px;}
-.acct{font-size:22px;font-weight:800;color:var(--navy);margin-bottom:10px;}
-.contacts{background:#f2f3f7;border-radius:10px;padding:12px 14px;margin-bottom:10px;font-size:14px;}
-.contacts a{color:var(--blue);}
-.pill-purple{background:#f1e4f5;color:var(--purple);}
-.muted{color:#8a8fa3;font-style:italic;font-size:13px;}
-.trig{font-size:14px;margin-bottom:10px;}
-.trig strong{color:var(--navy);}
-.action{border-left:4px solid var(--purple);background:#faf4fc;border-radius:0 10px 10px 0;padding:10px 14px;font-size:14px;margin-bottom:10px;}
-.uc-spot{border-left:4px solid var(--teal);background:#eefaf6;border-radius:0 10px 10px 0;padding:10px 14px;font-size:14px;}
-.uc-card .tag{background:#e0f4ee;color:var(--teal);}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;}
-.chip{background:#d8f0e8;color:#0e7a63;font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;}
-.trigger-card{border-top:5px solid var(--teal);}
-.field{font-size:14px;margin-bottom:8px;}
-.field b{color:var(--navy);}
-.hook{border-left:4px solid #27ae60;background:#f0faf3;border-radius:0 10px 10px 0;padding:10px 14px;font-style:italic;font-size:14px;margin:10px 0;}
-.disc{border-left:4px solid #f1c40f;background:#fdf9e7;border-radius:0 10px 10px 0;padding:10px 14px;font-size:14px;margin:10px 0;}
-.evergreen{border-left:4px solid var(--blue);background:#eef1fb;border-radius:0 10px 10px 0;padding:12px 16px;font-size:14px;margin-top:16px;}
-.datechip{background:#f2e6d9;color:var(--orange);font-size:11px;font-weight:700;border-radius:999px;padding:3px 10px;}
-.noupd{color:#8a8fa3;font-size:13px;margin-top:14px;}
-.statbar{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px;}
-.stat{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);padding:16px;text-align:center;}
-.stat .num{font-size:30px;font-weight:800;color:var(--navy);}
-.stat .src{font-size:11px;color:#8a8fa3;}
-.hookcard{background:linear-gradient(135deg,#0d1b3d,#0a66c2);color:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 14px rgba(13,27,61,.3);}
-.hookcard .tag{background:rgba(255,255,255,.18);color:#fff;}
-.hookline{font-size:19px;font-weight:800;margin:10px 0;}
-.hookline em{color:#ffd54d;font-style:normal;}
-.script{font-size:13px;opacity:.92;margin-bottom:10px;}
-.script li{margin-left:18px;margin-bottom:3px;}
-.fmt{font-size:12px;opacity:.75;border-top:1px solid rgba(255,255,255,.2);padding-top:8px;}
-.bdr-card{border-left:5px solid var(--red);}
-.bdr-day{color:var(--red);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:1px;}
-.bdr-acct{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:10px;}
-.cadence{background:#f2f3f7;border-radius:10px;padding:12px 14px;margin-bottom:10px;font-size:13px;}
-.draftbox{border-left:4px solid var(--red);background:#fdf0ee;border-radius:0 10px 10px 0;padding:12px 14px;font-size:13px;margin-bottom:10px;}
-.draftbox .subj{font-weight:800;color:var(--navy);margin-bottom:6px;}
-.mt{font-size:13px;margin-bottom:8px;}
-.pill-red{background:#fbe3e0;color:var(--red);}
-.pill-port{background:#e8eaf6;color:var(--blue);}
-.campaign{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);padding:22px;margin-top:18px;}
-.cheat{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0;font-size:12px;}
-.cheat span{background:#f2f3f7;border-radius:8px;padding:5px 9px;font-weight:600;color:var(--navy);}
-.metrics{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0;}
-.mchip{background:#eefaf6;color:#0e7a63;font-size:12px;font-weight:700;border-radius:999px;padding:6px 12px;}
-footer{position:fixed;bottom:0;left:0;right:0;background:var(--navy);color:#fff;font-size:13px;padding:12px 24px;text-align:center;z-index:60;}
-a.src{color:var(--blue);font-size:13px;}
-@media (max-width:720px){.grid2,.grid3,.statbar{grid-template-columns:1fr;}body{padding:12px 12px 90px;}header{padding:24px;}}
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#f7f8fa; color:#1a1f36; line-height:1.55; padding:24px 24px 80px; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  a { color:#2d4cb8; }
+  .header { background:linear-gradient(135deg,#0d1b3d 0%,#2d4cb8 100%); color:#fff; border-radius:16px; padding:36px 40px; box-shadow:0 12px 34px rgba(13,27,61,.35); margin-bottom:18px; }
+  .header h1 { font-size:28px; font-weight:800; margin-bottom:6px; }
+  .header p { opacity:.85; font-size:14px; }
+  .nav { position:sticky; top:0; z-index:50; background:#f7f8fa; padding:10px 0; margin-bottom:28px; display:flex; flex-wrap:wrap; gap:8px; }
+  .nav a { text-decoration:none; background:#fff; border:1px solid #e2e5ec; color:#1a1f36; font-size:13px; font-weight:600; padding:7px 14px; border-radius:999px; box-shadow:0 1px 3px rgba(0,0,0,.05); transition:all .15s; }
+  .nav a.active, .nav a:hover { background:#0d1b3d; color:#fff; border-color:#0d1b3d; }
+  section { margin-bottom:48px; scroll-margin-top:64px; }
+  .sec-head { display:flex; align-items:center; gap:12px; margin-bottom:6px; }
+  .sec-badge { width:34px; height:34px; min-width:34px; border-radius:50%; color:#fff; font-weight:800; font-size:16px; display:flex; align-items:center; justify-content:center; }
+  .sec-head h2 { font-size:23px; font-weight:800; color:#0d1b3d; }
+  .sec-sub { color:#5b657a; font-size:13.5px; margin:0 0 18px 46px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .card { background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.06); padding:20px; }
+  .tag { display:inline-block; font-size:10px; text-transform:uppercase; letter-spacing:1px; font-weight:700; padding:3px 9px; border-radius:999px; }
+  .tag-teal { background:#e0f5f0; color:#0e7a63; }
+  .tag-purple { background:#f3e5f7; color:#7b2d8b; }
+  .tag-orange { background:#fdeedd; color:#c46916; }
+  .tag-blue { background:#e3e9fb; color:#2d4cb8; }
+  .chip { display:inline-block; background:#e0f5f0; color:#0e7a63; font-size:12px; font-weight:600; padding:3px 10px; border-radius:999px; margin:2px 4px 2px 0; }
+  /* Section 1 task cards */
+  .task-card { border-left:5px solid #7b2d8b; }
+  .day { color:#7b2d8b; font-weight:700; font-size:14px; }
+  .acct { font-size:22px; font-weight:800; color:#0d1b3d; margin-bottom:10px; }
+  .contacts { background:#f2f3f7; border-radius:8px; padding:12px 14px; margin-bottom:12px; font-size:13.5px; }
+  .contacts .lbl, .lbl { font-size:10px; text-transform:uppercase; letter-spacing:1px; color:#5b657a; font-weight:700; display:block; margin-bottom:6px; }
+  .contacts .exec { margin-bottom:8px; }
+  .pin { display:inline-block; background:#f3e5f7; color:#7b2d8b; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:2px 8px; border-radius:999px; margin-top:3px; }
+  .triggers { font-size:13.5px; margin-bottom:12px; }
+  .action { border-left:4px solid #7b2d8b; background:#faf4fc; border-radius:0 8px 8px 0; padding:10px 14px; font-size:13.5px; margin-bottom:12px; }
+  .uc-spot { border-left:4px solid #16a085; background:#eef9f6; border-radius:0 8px 8px 0; padding:10px 14px; font-size:13.5px; }
+  .none { color:#8a92a6; font-style:italic; }
+  /* Section 3 trigger cards */
+  .trig-card { border-top:5px solid #16a085; margin-bottom:16px; }
+  .trig-name { font-size:20px; font-weight:800; color:#0d1b3d; display:inline-block; margin-right:10px; }
+  .trig-badge { background:#16a085; color:#fff; font-size:10px; text-transform:uppercase; letter-spacing:1px; font-weight:700; padding:3px 10px; border-radius:999px; vertical-align:middle; }
+  .field { font-size:13.5px; margin-top:8px; }
+  .field b.fl { color:#0e7a63; }
+  .hook { border-left:4px solid #27ae60; background:#effaf2; border-radius:0 8px 8px 0; padding:10px 14px; font-size:13.5px; font-style:italic; margin-top:10px; }
+  .discovery { border-left:4px solid #e6b800; background:#fdf9e8; border-radius:0 8px 8px 0; padding:10px 14px; font-size:13.5px; margin-top:10px; }
+  .evergreen { border-left:4px solid #2d4cb8; background:#eef1fb; border-radius:0 8px 8px 0; padding:12px 16px; font-size:13.5px; margin-top:16px; }
+  .noupdate { font-size:13px; color:#8a92a6; margin-top:12px; }
+  .datechip { display:inline-block; background:#f2f3f7; color:#5b657a; font-size:11px; font-weight:600; padding:3px 10px; border-radius:999px; margin-left:8px; vertical-align:middle; }
+  .src { font-size:12.5px; margin-top:8px; }
+  /* Section 6 */
+  .statbar { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:20px; }
+  .stat { background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.06); padding:16px; text-align:center; }
+  .stat .num { font-size:30px; font-weight:800; color:#0d1b3d; }
+  .stat .cap { font-size:11.5px; color:#5b657a; margin-top:4px; }
+  .hookgrid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .hookcard { border-radius:12px; padding:20px; color:#fff; box-shadow:0 4px 14px rgba(13,27,61,.3); }
+  .hookcard.navy { background:#0d1b3d; }
+  .hookcard.lkdn { background:#0a66c2; }
+  .hookcard .hbadge { display:inline-block; background:rgba(255,255,255,.16); font-size:10px; text-transform:uppercase; letter-spacing:1px; font-weight:700; padding:3px 10px; border-radius:999px; margin-bottom:10px; }
+  .hookline { font-size:19px; font-weight:800; margin-bottom:12px; line-height:1.3; }
+  .hookline .y { color:#ffd54d; }
+  .script { font-size:13px; opacity:.92; }
+  .script div { margin-bottom:5px; }
+  .script b { color:#ffd54d; font-weight:700; }
+  .fmt { margin-top:12px; font-size:12px; background:rgba(255,255,255,.1); border-radius:8px; padding:8px 12px; }
+  .footer { position:fixed; left:0; right:0; bottom:0; background:#0d1b3d; color:#fff; font-size:12.5px; text-align:center; padding:10px; z-index:60; }
+  .footer a { color:#9db4f5; }
+  h3.mini { font-size:16px; font-weight:800; color:#0d1b3d; margin:18px 0 10px; }
+  @media (max-width:720px){
+    body { padding:14px 12px 90px; }
+    .grid2, .grid3, .hookgrid { grid-template-columns:1fr; }
+    .statbar { grid-template-columns:1fr 1fr; }
+    .header { padding:24px; }
+    .header h1 { font-size:22px; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
-<header>
-<h1>Celonis Process Intelligence Sales Brief</h1>
-<p>Emily Maldonado · Automotive &amp; Mobility · Tuesday, July 7, 2026 · Week 28 · Rotation Group 3</p>
-</header>
 
-<nav id="nav">
-<a href="#tasks">① Tasks</a><a href="#usecases">② Use Cases</a><a href="#triggers">③ Account Triggers</a><a href="#competitors">④ Competitor Intel</a><a href="#news">⑤ Celonis News</a><a href="#social">⑥ Social Hooks</a><a href="#bdr">⑦ BDR Tasks</a>
+<div class="header">
+  <h1>Celonis Process Intelligence Sales Brief</h1>
+  <p>Emily Maldonado · Automotive &amp; Mobility Vertical · Monday, July 6, 2026 · Week 28</p>
+</div>
+
+<nav class="nav" id="nav">
+  <a href="#tasks">① Tasks</a>
+  <a href="#usecases">② Use Cases</a>
+  <a href="#triggers">③ Account Triggers</a>
+  <a href="#competitors">④ Competitor Intel</a>
+  <a href="#news">⑤ Celonis News</a>
+  <a href="#social">⑥ Social Hooks</a>
 </nav>
 
-<!-- SECTION 1 -->
+<!-- ══════════════ SECTION 1 ══════════════ -->
 <section id="tasks">
-<div class="sec-title"><div class="badge" style="background:var(--purple)">1</div><h2>This Week's Tasks</h2></div>
-<div class="sec-sub">Week 28 · Jul 6–10, 2026 · Group 3 rotation</div>
-<div class="grid2">
+  <div class="sec-head"><div class="sec-badge" style="background:#7b2d8b">1</div><h2>This Week's Tasks</h2></div>
+  <p class="sec-sub">Week 28 · Jul 6–10, 2026 · Rotation Group 3</p>
+  <div class="grid2">
 
-<div class="card task-card">
-<div class="day">Monday</div><div class="acct">Hyundai Capital America</div>
-<div class="contacts"><b>Johan Swart</b> — SVP &amp; Chief Information Officer<br>
-LinkedIn: <a href="https://www.linkedin.com/in/johan-swart-3b974922/" target="_blank">linkedin.com/in/johan-swart-3b974922</a> <span class="tag pill-purple">📌 Connect on LinkedIn</span><br>
-<span style="font-size:13px">Ex-Mercedes-Benz Financial Services CIO; 20+ yrs auto-captive experience.</span></div>
-<div class="trig"><strong>Triggers:</strong> CEO Jim Drotman is publicly prioritizing AI investment and platform modernization in 2026 (<a class="src" href="https://www.autofinancenews.net/allposts/technology/hyundai-capital-america-ceo-drotman-prioritizing-ai-in-2026/" target="_blank">Auto Finance News</a>). No individual 2026 trigger found for Swart himself.</div>
-<div class="action"><b>Suggested action:</b> Email Swart referencing Drotman's public 2026 AI mandate — ask how IT is prioritizing which processes get AI first, and position process intelligence as the data foundation for that roadmap.</div>
-<div class="uc-spot"><b>UC-3: Warranty &amp; Returns / Claims Process Mining</b> — as the captive finance arm, HCA's high-volume funding, titling, and collections workflows carry the same manual rework Celonis eliminates in claims processes.</div>
-</div>
+    <div class="card task-card">
+      <div class="day">MONDAY</div>
+      <div class="acct">Hyundai Capital America</div>
+      <div class="contacts"><span class="lbl">Contacts</span>
+        <div class="exec"><b>Jim Drotman — President &amp; CEO</b> (joined Jun 2025; former Chief Transformation Officer at Ford Credit)<br>
+        LinkedIn: <a href="https://www.linkedin.com/in/jim-drotman-2609063/" target="_blank">linkedin.com/in/jim-drotman-2609063</a><br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+        <div class="exec"><b>Johan Swart — CIO</b> (ex-CIO Daimler Truck Financial Services &amp; Mercedes-Benz Financial Services Americas)<br>
+        LinkedIn: <a href="https://www.linkedin.com/in/johan-swart-3b974922/" target="_blank">linkedin.com/in/johan-swart-3b974922</a><br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+      </div>
+      <div class="triggers"><span class="lbl">Triggers</span>
+        • Drotman told Auto Finance News he is <b>prioritizing AI investment, platform modernization, and dealer/customer experience in 2026</b> (<a href="https://www.autofinancenews.net/allposts/technology/hyundai-capital-america-ceo-drotman-prioritizing-ai-in-2026/" target="_blank">Auto Finance News</a>)<br>
+        • Named President &amp; CEO effective Jun 2, 2025 (<a href="https://ir.hyundaicapitalamerica.com/2025-06-02-Hyundai-Capital-America-Names-New-President-CEO" target="_blank">HCA IR</a>)
+      </div>
+      <div class="action"><b>Suggested action:</b> Email Drotman's office / connect with Swart referencing the Auto Finance News interview — "You've said AI and platform modernization are 2026 priorities; Celonis gives AI the process context captive-finance workflows need, from originations to servicing." Bridge to how process intelligence de-risks his modernization roadmap.</div>
+      <div class="uc-spot"><b>UC-3: Warranty &amp; Returns / Claims Process Mining</b> — HCA's high-volume loan origination, funding, and end-of-lease workflows mirror claims processes: heavy manual rework and process deviations Celonis surfaces and fixes.</div>
+    </div>
 
-<div class="card task-card">
-<div class="day">Tuesday</div><div class="acct">Paccar Inc</div>
-<div class="contacts"><b>Lily Ley</b> — VP &amp; Chief Information Officer (since 2017)<br>
-LinkedIn: <a href="https://www.linkedin.com/in/lily-ley-9241b041/" target="_blank">linkedin.com/in/lily-ley-9241b041</a> <span class="tag pill-purple">📌 Connect on LinkedIn</span><br>
-<span style="font-size:13px">Leads IT modernization for digital &amp; connected truck services.</span></div>
-<div class="trig"><strong>Triggers:</strong> Featured in the WBC "Women Corporate Tech Executives in America" report (<a class="src" href="https://www.wbcollaborative.org/women_leaders_tech/lily-ley/" target="_blank">source</a>); profiled for leading IT modernization creating new connected-services revenue streams. No hard 2026 trigger found.</div>
-<div class="action"><b>Suggested action:</b> Send a congratulatory note on the WBC recognition, then bridge: her connected-services revenue mandate depends on clean core processes — offer a PACCAR-specific P2P/O2C benchmark conversation.</div>
-<div class="uc-spot"><b>UC-2: Procure-to-Pay / Supply Chain Efficiency</b> — Kenworth/Peterbilt's multi-plant supplier network is exactly where Celonis finds invoice bottlenecks and working-capital leakage.</div>
-</div>
+    <div class="card task-card">
+      <div class="day">TUESDAY</div>
+      <div class="acct">Paccar Inc</div>
+      <div class="contacts"><span class="lbl">Contacts</span>
+        <div class="exec"><b>Lily Ley — VP &amp; Chief Information Officer</b> (first woman on Paccar's executive operating committee)<br>
+        LinkedIn: <a href="https://www.linkedin.com/in/lily-ley-9241b041/" target="_blank">linkedin.com/in/lily-ley-9241b041</a><br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+      </div>
+      <div class="triggers"><span class="lbl">Triggers</span>
+        • Listed as a governing-body participant at the <a href="https://www.evanta.com/ciso/seattle/seattle-ciso-executive-summit-7424" target="_blank">2025 Seattle CISO Community Executive Summit</a><br>
+        • Global National ORBIE Award winner; profiled for IT innovation leadership at PACCAR (<a href="https://www.wbcollaborative.org/women_leaders_tech/lily-ley/" target="_blank">WBC profile</a>). No 2026-dated trigger found.
+      </div>
+      <div class="action"><b>Suggested action:</b> Connect with Ley citing her ORBIE recognition and IT-innovation track record — ask how Paccar is connecting its ERP landscape across Kenworth, Peterbilt, DAF and Parts divisions, and share a Celonis truck-manufacturing procure-to-pay proof point.</div>
+      <div class="uc-spot"><b>UC-2: Procure-to-Pay / Supply Chain Efficiency</b> — Paccar's multi-brand truck manufacturing and parts network is a textbook fit for supplier-invoice and procurement-cycle mining to protect working capital.</div>
+    </div>
 
-<div class="card task-card">
-<div class="day">Wednesday</div><div class="acct">JM Family Enterprises</div>
-<div class="contacts"><b>Chad Couch</b> — SVP &amp; Chief Information Officer · <a href="https://www.linkedin.com/in/chad-couch-cio-cto" target="_blank">LinkedIn</a> <span class="tag pill-purple">📌 Connect on LinkedIn</span><br>
-<b>John Damalas</b> — GVP &amp; Chief Technology Officer (applied AI, data &amp; analytics background) · <a href="https://www.linkedin.com/in/john-damalas/" target="_blank">LinkedIn</a> <span class="tag pill-purple">📌 Connect on LinkedIn</span></div>
-<div class="trig"><strong>Triggers:</strong> JM Family announced changes in executive technology leadership, elevating Damalas to CTO with an applied-AI mandate (<a class="src" href="https://jmfamily.com/news/jm-family-enterprises-announces-changes-in-executive-technology-leadership/" target="_blank">jmfamily.com</a>). Couch was a South Florida ORBIE Awards finalist (<a class="src" href="https://www.orbie.org/honoree/chad-couch/4007" target="_blank">ORBIE</a>).</div>
-<div class="action"><b>Suggested action:</b> Reach Damalas on the new CTO role — congratulate, then ask how he's grounding applied AI in reliable process data across Southeast Toyota's distribution business. His Walmart/Pacific Life AI background makes the "context layer" pitch land fast.</div>
-<div class="uc-spot"><b>UC-1: Order-to-Cash / Vehicle Delivery Optimization</b> — Southeast Toyota Distributors moves ~20% of US Toyotas; port-to-dealer delivery flow is a textbook Celonis O2C use case.</div>
-</div>
+    <div class="card task-card">
+      <div class="day">WEDNESDAY</div>
+      <div class="acct">JM Family Enterprises</div>
+      <div class="contacts"><span class="lbl">Contacts</span>
+        <div class="exec"><b>Chad Couch — SVP &amp; Chief Information Officer</b><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/chad-couch-cio-cto" target="_blank">linkedin.com/in/chad-couch-cio-cto</a><br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+        <div class="exec"><b>John Damalas — Group VP &amp; CTO, Information Technology Services</b><br>
+        Bio: <a href="https://jmfamily.com/biographies/john-damalas/" target="_blank">jmfamily.com/biographies/john-damalas</a><br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+      </div>
+      <div class="triggers"><span class="lbl">Triggers</span>
+        • Couch is a listed participant at the <a href="https://www.evanta.com/cio/florida/florida-cio-executive-summit-7542" target="_blank">2025 Florida CIO Community Executive Summit</a><br>
+        • 2024 South Florida ORBIE Awards finalist, Large Enterprise (<a href="https://www.orbie.org/honoree/chad-couch/4007" target="_blank">ORBIE</a>)
+      </div>
+      <div class="action"><b>Suggested action:</b> Connect with Couch referencing the Florida CIO Summit and his mandate to "deliver initiatives faster and more efficiently" — position Celonis as the fastest path to visibility across Southeast Toyota's vehicle processing and distribution flows ($22.8B revenue, largest independent Toyota distributor).</div>
+      <div class="uc-spot"><b>UC-1: Order-to-Cash / Vehicle Delivery Optimization</b> — Southeast Toyota Distributors moves hundreds of thousands of vehicles from port to dealer; Celonis exposes where units idle in processing, accessory install, and dealer allocation.</div>
+    </div>
 
-<div class="card task-card">
-<div class="day">Thursday</div><div class="acct">The Friedkin Companies</div>
-<div class="contacts"><b>Ken Elliott</b> — Chief Data &amp; Analytics Officer<br>
-LinkedIn: <a href="https://www.linkedin.com/in/elliottkenneth/" target="_blank">linkedin.com/in/elliottkenneth</a> <span class="tag pill-purple">📌 Connect on LinkedIn</span></div>
-<div class="trig"><strong>Triggers:</strong> Featured in MIT Technology Review — "Data as an asset: The Friedkin Group's road to AI readiness" (<a class="src" href="https://www.technologyreview.com/2025/11/01/1128100/data-as-an-asset-the-friedkin-groups-road-to-ai-readiness/" target="_blank">MIT Tech Review, Nov 2025</a>) and in Digital First Magazine's "The Dawn of the Agentic Enterprise" (<a class="src" href="https://www.digitalfirstmagazine.com/the-dawn-of-the-agentic-enterprise/" target="_blank">source</a>).</div>
-<div class="action"><b>Suggested action:</b> Comment on / reference the MIT Tech Review piece — Elliott is publicly championing AI-ready data. Bridge: "AI-ready data still needs process context — that's the layer Celonis adds on top of the foundation you've built at Gulf States Toyota."</div>
-<div class="uc-spot"><b>UC-1: Order-to-Cash / Vehicle Delivery Optimization</b> — Gulf States Toyota's distributor flow (port → processing → 150+ dealers) mirrors the exact delivery-lead-time use case Celonis solves for OEM distribution.</div>
-</div>
+    <div class="card task-card">
+      <div class="day">THURSDAY</div>
+      <div class="acct">The Friedkin Companies</div>
+      <div class="contacts"><span class="lbl">Contacts</span>
+        <div class="exec"><b>Eric Williamson — President &amp; General Manager, Gulf States Toyota</b> (<a href="https://www.friedkin.com/gulf-states-toyota/" target="_blank">friedkin.com</a>)<br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+        <div class="exec"><b>Mike Brennan — COO &amp; SVP, Gulf States Toyota</b> (<a href="https://www.friedkin.com/gulf-states-toyota-adds-automotive-industry-veteran-mike-brennan-to-its-leadership-team/" target="_blank">announcement</a>)<br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+        <div class="none">No CIO/CTO identified via web search — try LinkedIn: "Friedkin Companies" OR "Gulf States Toyota" CIO OR "VP Information Technology" Houston</div>
+      </div>
+      <div class="triggers"><span class="lbl">Triggers</span> <span class="none">No recent triggers found.</span></div>
+      <div class="action"><b>Suggested action:</b> Cold outreach to Brennan (COO) with a distribution-operations angle: Gulf States Toyota distributes Toyotas across 5 states — ask how they measure port-to-dealer cycle time today, and share how Celonis customers cut vehicle delivery lead times without new systems.</div>
+      <div class="uc-spot"><b>UC-1: Order-to-Cash / Vehicle Delivery Optimization</b> — GST's exclusive 5-state Toyota distribution business lives and dies on vehicle throughput from port processing to dealer delivery.</div>
+    </div>
 
-<div class="card task-card">
-<div class="day">Friday</div><div class="acct">Woodbridge Holdings</div>
-<div class="contacts"><span class="muted">No named tech exec found via web search — try searching: site:linkedin.com/in "Woodbridge" "The Woodbridge Group" CIO OR "VP Information Technology" OR "Director of IT" Mississauga</span></div>
-<div class="trig"><strong>Triggers:</strong> Feb 2026 — Bill Drury appointed President, Asia, Mexico &amp; South America, signaling regional expansion (<a class="src" href="https://www.woodbridgegroup.com/Resources/Newsroom" target="_blank">Woodbridge Newsroom</a>). TrimVisible™ BIO foam named a Sustainability Product of the Year; 9th straight Canada's Best Managed year (<a class="src" href="https://www.woodbridgegroup.com/News/2400/woodbridge-named-a-2023-sustainability-award-winner" target="_blank">source</a>).</div>
-<div class="action"><b>Suggested action:</b> Cold outreach to the COO org referencing the Drury appointment: global expansion across 6 continents multiplies process variance — ask how they keep plant-level P2P and quality processes consistent as the footprint grows.</div>
-<div class="uc-spot"><b>UC-2: Procure-to-Pay / Supply Chain Efficiency</b> — a 2.2K-employee foam supplier feeding OEM JIT lines lives or dies on supplier invoice flow and materials procurement cycle times.</div>
-</div>
+    <div class="card task-card">
+      <div class="day">FRIDAY</div>
+      <div class="acct">Woodbridge Holdings</div>
+      <div class="contacts"><span class="lbl">Contacts</span>
+        <div class="exec"><b>Shlomo Bibas — SVP &amp; Chief Technology Officer</b> (<a href="https://www.woodbridgegroup.com/News/2371/woodbridge-appoints-shlomo-bibas-as-senior-vice-president-chief-technology-offi" target="_blank">appointment</a>)<br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+        <div class="exec"><b>Kai Jacobsen — President &amp; CEO</b> (<a href="https://www.woodbridgegroup.com/News/2375/woodbridge-names-kai-jacobsen-president-and-chief-executive-officer" target="_blank">announcement</a>)<br>
+        <span class="pin">📌 Connect on LinkedIn</span></div>
+      </div>
+      <div class="triggers"><span class="lbl">Triggers</span> <span class="none">No recent 2026 triggers found. Note: Woodbridge markets its own "IntelliSense" digital/SCADA initiative — signals appetite for operational data.</span></div>
+      <div class="action"><b>Suggested action:</b> Cold outreach to Bibas: Woodbridge already invests in plant-floor telemetry (IntelliSense) — ask whether that visibility extends to the transactional side (supplier invoices, procurement, quality claims), where Celonis typically finds 7-figure working-capital leakage for tier-1 suppliers.</div>
+      <div class="uc-spot"><b>UC-2: Procure-to-Pay / Supply Chain Efficiency</b> — As a global tier-1 foam supplier, Woodbridge's margin hinges on procurement cycles and supplier payment discipline across dozens of plants.</div>
+    </div>
 
-</div>
+  </div>
 </section>
 
-<!-- SECTION 2 -->
+<!-- ══════════════ SECTION 2 ══════════════ -->
 <section id="usecases">
-<div class="sec-title"><div class="badge" style="background:var(--teal)">2</div><h2>Celonis Use Cases</h2></div>
-<div class="sec-sub">Evergreen Automotive Use Cases</div>
-<div class="grid3">
-<div class="card uc-card">
-<b style="font-size:18px">UC-1: Order-to-Cash / Vehicle Delivery Optimization</b> <span class="tag">Automotive</span>
-<p style="font-size:14px;margin:8px 0">Celonis maps the end-to-end order-to-delivery process for OEMs and distributors, identifying where vehicles sit idle in approval loops, logistics handoffs, or dealer prep. Forrester's TEI study found sales-order automation alone worth $24.5M to a composite customer (touchless rate 33%→86%).</p>
-<div class="chips"><span class="chip">Tesla</span><span class="chip">Toyota NA</span><span class="chip">Hyundai Motor America</span><span class="chip">JM Family</span><span class="chip">Friedkin / GST</span></div>
-<p style="font-size:13px"><b>Why it applies:</b> Distribution-heavy accounts (JM Family, Friedkin) and volume OEMs feel every day of delivery lead time in floorplan cost and CSI scores.</p>
-<a class="src" href="https://www.celonis.com/news/press/celonis-customers-saw-payback-in-6-months-and-383-roi" target="_blank">Source: Forrester TEI of Celonis</a>
-</div>
-<div class="card uc-card">
-<b style="font-size:18px">UC-2: Procure-to-Pay / Supply Chain Efficiency</b> <span class="tag">Automotive</span>
-<p style="font-size:14px;margin:8px 0">Celonis exposes bottlenecks in supplier invoice processing and procurement cycles across automotive supply chains — faster supplier payments, less maverick spend, improved working capital. Chart Industries used Celonis across AP/AR/P2P to cut manual rework and free working capital.</p>
-<div class="chips"><span class="chip">Paccar</span><span class="chip">Woodbridge</span><span class="chip">Kimball Electronics</span><span class="chip">Kenco Group</span><span class="chip">J.B. Poindexter</span></div>
-<p style="font-size:13px"><b>Why it applies:</b> Manufacturers and suppliers in the list run multi-plant, multi-ERP procurement where invoice-cycle friction is directly measurable cash.</p>
-<a class="src" href="https://www.celonis.com/news/press/chart-industries-drives-successful-business-transformation-with-celonis" target="_blank">Source: celonis.com — Chart Industries story</a>
-</div>
-<div class="card uc-card">
-<b style="font-size:18px">UC-3: Warranty, Claims &amp; Returns Process Mining</b> <span class="tag">Automotive</span>
-<p style="font-size:14px;margin:8px 0">Celonis analyzes warranty and claims workflows to find manual rework, duplicate claims, and process deviations — faster resolution, lower warranty cost, better compliance. The same pattern applies to captive-finance funding and collections queues.</p>
-<div class="chips"><span class="chip">Kia Motors America</span><span class="chip">Hyundai Motor America</span><span class="chip">Hyundai Capital</span><span class="chip">Mazda NAO</span><span class="chip">Group 1</span></div>
-<p style="font-size:13px"><b>Why it applies:</b> OEM warranty volume plus HCA's contract/funding operations are high-volume, exception-driven processes — ideal mining targets.</p>
-<a class="src" href="https://www.celonis.com/insights/topics/what-is-process-mining" target="_blank">Source: celonis.com — process mining use cases</a>
-</div>
-</div>
+  <div class="sec-head"><div class="sec-badge" style="background:#16a085">2</div><h2>Celonis Use Cases</h2></div>
+  <p class="sec-sub">Evergreen Automotive Use Cases</p>
+  <div class="grid3">
+    <div class="card">
+      <span class="tag tag-teal">Automotive</span>
+      <h3 class="mini">UC-1: Order-to-Cash / Vehicle Delivery Optimization</h3>
+      <p style="font-size:13.5px">Celonis maps the end-to-end order-to-delivery process for OEMs and dealers, identifying where vehicles sit idle in approval loops, logistics handoffs, or dealer prep. Outcome: reduced delivery lead times and higher customer satisfaction scores.</p>
+      <div style="margin:10px 0"><span class="chip">Tesla</span><span class="chip">Toyota NA</span><span class="chip">Hyundai Motor America</span><span class="chip">AutoNation</span></div>
+      <p style="font-size:13px"><b>Why it applies:</b> With Hyundai posting record H1-2026 volume and EV/hybrid mix shifting fast, every day of dwell between order and delivery is margin and CSI left on the table.</p>
+      <p class="src">Source: <a href="https://www.celonis.com/solutions/order-management/" target="_blank">celonis.com — Order Management</a></p>
+    </div>
+    <div class="card">
+      <span class="tag tag-teal">Automotive</span>
+      <h3 class="mini">UC-2: Procure-to-Pay / Supply Chain Efficiency</h3>
+      <p style="font-size:13.5px">Celonis identifies bottlenecks in supplier invoice processing and procurement cycles across automotive supply chains. Outcome: faster supplier payments, reduced maverick spend, improved working capital.</p>
+      <div style="margin:10px 0"><span class="chip">J.B. Poindexter</span><span class="chip">Kimball Electronics</span><span class="chip">Paccar</span><span class="chip">Kenco</span><span class="chip">Holman</span></div>
+      <p style="font-size:13px"><b>Why it applies:</b> Truck OEMs and tier-1 suppliers are in a freight/cost downturn — P2P mining is the fastest lever for working capital without headcount cuts.</p>
+      <p class="src">Source: <a href="https://www.celonis.com/solutions/procurement/" target="_blank">celonis.com — Procurement</a></p>
+    </div>
+    <div class="card">
+      <span class="tag tag-teal">Automotive</span>
+      <h3 class="mini">UC-3: Warranty &amp; Returns Process Mining</h3>
+      <p style="font-size:13.5px">Celonis analyzes warranty claim workflows to find manual rework, duplicate claims, and process deviations. Outcome: faster claim resolution, reduced warranty costs, improved compliance.</p>
+      <div style="margin:10px 0"><span class="chip">Kia</span><span class="chip">Hyundai Motor America</span><span class="chip">Hyundai Capital</span><span class="chip">Mazda</span><span class="chip">Group 1</span></div>
+      <p style="font-size:13px"><b>Why it applies:</b> Record hybrid/EV volume means new warranty claim types and dealer rework — process deviations here directly hit OEM cost of quality.</p>
+      <p class="src">Source: <a href="https://www.celonis.com/industries/automotive/" target="_blank">celonis.com — Automotive</a></p>
+    </div>
+  </div>
 </section>
 
-<!-- SECTION 3 -->
+<!-- ══════════════ SECTION 3 ══════════════ -->
 <section id="triggers">
-<div class="sec-title"><div class="badge" style="background:var(--teal)">3</div><h2>Target Account Buying Triggers</h2></div>
-<div class="sec-sub">Top-8 priority accounts · researched July 7, 2026</div>
-<div class="grid2">
+  <div class="sec-head"><div class="sec-badge" style="background:#16a085">3</div><h2>Target Account Buying Triggers</h2></div>
+  <p class="sec-sub">Top-8 priority accounts · researched Jul 6, 2026</p>
 
-<div class="card trigger-card">
-<b style="font-size:20px">Lucid Motors</b> <span class="tag" style="background:#e0f4ee;color:var(--teal)">RESTRUCTURING</span>
-<div class="field" style="margin-top:8px"><b>What happened:</b> Early July 2026 — 18% US workforce reduction, shift to single-shift manufacturing at AMP-1, sweeping leadership overhaul incl. new CFO Alexander De Bock (a cost-transformation specialist); 2026 production guidance under review.</div>
-<div class="field"><b>Business priority:</b> Survival-grade cost discipline and execution accountability.</div>
-<div class="field"><b>Celonis angle:</b> A new CFO hired explicitly for cost transformation needs process-level visibility into where cash leaks — P2P, inventory, and manufacturing support processes — within his first 90 days.</div>
-<div class="hook">"With a single-shift model, every hour of process waste now hits output directly — how are you finding where the leakage is before you cut further?"</div>
-<a class="src" href="https://www.prnewswire.com/news-releases/lucid-announces-q2-production-and-deliveries-leadership-actions-to-improve-execution-302816643.html" target="_blank">Source: Lucid press release</a>
-</div>
+  <div class="card trig-card">
+    <span class="trig-name">Tesla</span><span class="trig-badge">AI Capex Surge</span>
+    <div class="field"><b class="fl">What happened:</b> Tesla raised 2026 capex guidance to $25B+ (from $20B) for AI training infrastructure, chip design, Optimus, and robotaxi ops. Q1 revenue rose 16% to $22.4B but net income of $477M was among its weakest quarters in 5 years. Q2 earnings land Jul 22.</div>
+    <div class="field"><b class="fl">Business priority signal:</b> Massive AI bet funded from a thin-margin core business — operational efficiency in the vehicle business must fund the AI ambition.</div>
+    <div class="field"><b class="fl">Celonis angle:</b> When capex triples and margins thin, process intelligence in order-to-delivery, service, and supply chain is the non-negotiable efficiency layer that protects cash.</div>
+    <div class="hook">"With $25B going to AI infrastructure this year, how is the ops side proving it can self-fund — where does Tesla see process waste in delivery and service workflows today?"</div>
+    <div class="src">Source: <a href="https://www.automotiveworld.com/news/tesla-raises-capex-to-25bn-as-musk-doubles-down-on-ai-bet/" target="_blank">Automotive World</a> · <a href="https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf" target="_blank">Tesla Q1 2026 Update</a></div>
+  </div>
 
-<div class="card trigger-card">
-<b style="font-size:20px">Tesla</b> <span class="tag" style="background:#e0f4ee;color:var(--teal)">EARNINGS / AI SPEND</span>
-<div class="field" style="margin-top:8px"><b>What happened:</b> Q2 deliveries of 480,126 beat estimates but the stock fell ~7.5%; 2026 AI infrastructure spend raised to $25B; Q2 earnings call July 22.</div>
-<div class="field"><b>Business priority:</b> Proving AI/autonomy spend converts to measurable business progress — margins under scrutiny.</div>
-<div class="field"><b>Celonis angle:</b> When AI capex is $25B, the board question becomes ROI discipline on everything else — process intelligence quantifies operational efficiency in delivery, service, and energy operations.</div>
-<div class="hook">"Ahead of the July 22 call, how is the ops team quantifying which internal processes actually got faster from last year's AI investments?"</div>
-<a class="src" href="https://www.tradingkey.com/analysis/stocks/us-stocks/262009665-tesla-crushed-q2-delivery-estimates-with-480k-cars-why-did-stock-tank-tradingkey" target="_blank">Source: TradingKey / Tesla 8-K</a>
-</div>
+  <div class="card trig-card">
+    <span class="trig-name">Group 1 Automotive</span><span class="trig-badge">Cost Reduction Program</span>
+    <div class="field"><b class="fl">What happened:</b> In early April, Group 1 cut ~700 US full-time roles (~$14M SG&amp;A savings) targeting $50M in annual US cost removal, while telling investors it is leveraging AI to improve returns with "many investments in early stages."</div>
+    <div class="field"><b class="fl">Business priority signal:</b> Structural cost takeout plus an explicit, early-stage AI efficiency agenda.</div>
+    <div class="field"><b class="fl">Celonis angle:</b> Headcount cuts without process redesign snap back — Celonis makes the $50M durable by finding and fixing the rework loops in F&amp;I, parts &amp; service, and used-vehicle recon that people were papering over.</div>
+    <div class="hook">"You've committed $50M in cost removal — how will you verify the work those 700 roles did doesn't reappear as rework and delays in service and F&amp;I?"</div>
+    <div class="src">Source: <a href="https://www.group1corp.com/2026-04-30-Group-1-Automotive-Reports-First-Quarter-2026-Financial-Results" target="_blank">Group 1 Q1 2026 results</a> · <a href="https://www.benzinga.com/insights/news/26/04/52179317/group-1-automotive-q1-2026-earnings-call-complete-transcript" target="_blank">earnings call</a></div>
+  </div>
 
-<div class="card trigger-card">
-<b style="font-size:20px">Toyota North America</b> <span class="tag" style="background:#e0f4ee;color:var(--teal)">EXPANSION + LEADERSHIP</span>
-<div class="field" style="margin-top:8px"><b>What happened:</b> $3.6B San Antonio expansion (2nd Tacoma line, 2,000 jobs); supply chain &amp; manufacturing leadership reshuffle effective July 13, 2026 (Austin, Morita, Brennan, Kazunas); Brian Kursar named Group VP &amp; Head of AI earlier in 2026.</div>
-<div class="field"><b>Business priority:</b> Scaling manufacturing capacity while standing up an enterprise AI organization.</div>
-<div class="field"><b>Celonis angle:</b> New supply-chain leaders + a new AI org = the exact moment to baseline current-state processes before the second line comes online.</div>
-<div class="hook">"With new supply chain leadership starting July 13, what baseline will they use to judge whether San Antonio's second line launches clean?"</div>
-<a class="src" href="https://www.indexbox.io/blog/toyota-north-america-announces-supply-chain-and-manufacturing-leadership-changes/" target="_blank">Source: Toyota USA Newsroom / IndexBox</a>
-</div>
+  <div class="card trig-card">
+    <span class="trig-name">U-Haul International</span><span class="trig-badge">Earnings Pressure</span>
+    <div class="field"><b class="fl">What happened:</b> FY2026 net earnings collapsed to $83.1M from $367.1M, driven by a $186.6M jump in fleet depreciation and $117.6M in equipment-disposal losses. Chairman Joe Shoen flagged a "bow wave of costs" from built-but-unrented storage units.</div>
+    <div class="field"><b class="fl">Business priority signal:</b> Asset productivity and cost control are now board-level urgency; a $350M buyback signals confidence but earnings must recover.</div>
+    <div class="field"><b class="fl">Celonis angle:</b> Fleet maintenance, equipment disposal, and storage lease-up are process chains — Celonis shows where cycle times and handoffs destroy asset utilization.</div>
+    <div class="hook">"With fleet depreciation up $187M, how much of that is timing — units stuck in maintenance, transfer, and disposal queues longer than they should be?"</div>
+    <div class="src">Source: <a href="https://www.businesswire.com/news/home/20260527747120/en/U-Haul-Holding-Company-Reports-Fiscal-2026-Financial-Results" target="_blank">Business Wire, May 27, 2026</a></div>
+  </div>
 
-<div class="card trigger-card">
-<b style="font-size:20px">U-Haul International</b> <span class="tag" style="background:#e0f4ee;color:var(--teal)">COST PRESSURE</span>
-<div class="field" style="margin-top:8px"><b>What happened:</b> FY2026 net earnings collapsed to $83.1M (from $367.1M) on a $186.6M rise in fleet depreciation and $117.6M in equipment-disposal losses; revenue still grew to $6.04B.</div>
-<div class="field"><b>Business priority:</b> Restoring profitability — fleet lifecycle cost and asset-disposal processes are the named culprits.</div>
-<div class="field"><b>Celonis angle:</b> Fleet acquisition-to-disposal is a process; mining it reveals where disposal timing, rework, and maintenance loops destroy margin.</div>
-<div class="hook">"Disposal losses swung $132M year-over-year — does the team have event-level visibility into where the fleet lifecycle process is breaking?"</div>
-<a class="src" href="https://finance.yahoo.com/markets/stocks/articles/u-haul-fiscal-2026-earnings-142559875.html" target="_blank">Source: Yahoo Finance / U-Haul 8-K</a>
-</div>
+  <div class="card trig-card">
+    <span class="trig-name">Hyundai Motor America</span><span class="trig-badge">Record Volume</span>
+    <div class="field"><b class="fl">What happened:</b> Record June (77,555 units, +11%) and record first half (450,568, +3%); hybrids up 74% in June. New VP of National Sales Steven Yandura effective Jun 24 owns retail strategy and dealer relations.</div>
+    <div class="field"><b class="fl">Business priority signal:</b> Scaling delivery and dealer operations to record demand, with a hybrid mix shift straining allocation and logistics.</div>
+    <div class="field"><b class="fl">Celonis angle:</b> Record sales stress order-to-delivery — Celonis finds where vehicles idle between port, allocation, and dealer prep so record demand converts to record CSI, not backlog.</div>
+    <div class="hook">"Congrats on the record half — as hybrid demand jumps 74%, where are allocation and delivery timelines stretching, and how would you see it if they were?"</div>
+    <div class="src">Source: <a href="https://www.prnewswire.com/news-releases/hyundai-motor-america-reports-record-june-q2-and-first-half-2026-total-sales-302815599.html" target="_blank">PR Newswire, Jul 1, 2026</a></div>
+  </div>
 
-<div class="card trigger-card">
-<b style="font-size:20px">AutoNation</b> <span class="tag" style="background:#e0f4ee;color:var(--teal)">AI ROI DISCIPLINE</span>
-<div class="field" style="margin-top:8px"><b>What happened:</b> Q1 2026 — management says AI/productivity tech investments are exploratory and will be "quickly shut off" without clear ROI; AutoNation Finance profit hit $9M in Q1 (near all of 2025) on a $2.4B portfolio.</div>
-<div class="field"><b>Business priority:</b> Only AI that provably pays; scaling captive finance profitably.</div>
-<div class="field"><b>Celonis angle:</b> Celonis is the AI investment that measures the others — Forrester-validated 383% ROI and 6-month payback answers their kill-switch criterion directly.</div>
-<div class="hook">"Your team said AI that doesn't show ROI gets shut off — what's the measurement layer deciding which ones stay?"</div>
-<a class="src" href="https://finance.yahoo.com/markets/stocks/articles/autonation-inc-q1-2026-earnings-164739650.html" target="_blank">Source: Yahoo Finance Q1 summary</a>
-</div>
+  <div class="card trig-card">
+    <span class="trig-name">AutoNation</span><span class="trig-badge">AI Savings Proof Point</span>
+    <div class="field"><b class="fl">What happened:</b> Q1 2026 revenue dipped 2% to $6.6B; management said digital/AI applications generated ~$5M savings in 2025 and committed to continued brand and technology investment. AutoNation Finance profit surged ($9M in Q1, portfolio $2.4B).</div>
+    <div class="field"><b class="fl">Business priority signal:</b> Proven appetite for AI-driven efficiency, plus a fast-growing captive finance arm with process scale-up pains.</div>
+    <div class="field"><b class="fl">Celonis angle:</b> $5M in AI savings is a start — process intelligence typically finds an order of magnitude more across service, parts, F&amp;I, and the growing finance portfolio's originations flow.</div>
+    <div class="hook">"You banked ~$5M from AI applications last year — what would it be worth to see every store's service and F&amp;I process variance in one live view?"</div>
+    <div class="src">Source: <a href="https://www.fool.com/earnings/call-transcripts/2026/05/01/autonation-an-q1-2026-earnings-transcript/" target="_blank">AutoNation Q1 2026 transcript</a></div>
+  </div>
 
-<div class="card trigger-card">
-<b style="font-size:20px">Group 1 Automotive</b> <span class="tag" style="background:#e0f4ee;color:var(--teal)">LEADERSHIP</span>
-<div class="field" style="margin-top:8px"><b>What happened:</b> Q1 2026 adj. EPS $8.66 with record UK gross profit ($230.6M, +6.3%); Daniel McHenry named President &amp; CEO of UK business (May 19) while retaining CFO duties; dividend +10%.</div>
-<div class="field"><b>Business priority:</b> Parts &amp; service and F&amp;I growth; running UK ops with a leaner leadership bench.</div>
-<div class="field"><b>Celonis angle:</b> A CFO running a whole region needs self-serve process visibility — fixed-ops throughput and F&amp;I cycle time are minable, measurable P&amp;L levers.</div>
-<div class="hook">"With McHenry wearing both CFO and UK CEO hats, where does he get process-level answers without commissioning a study?"</div>
-<a class="src" href="https://fortune.com/company/group-1-automotive/earnings/q1-2026/" target="_blank">Source: Group 1 8-K / Fortune</a>
-</div>
+  <div class="card trig-card">
+    <span class="trig-name">Toyota North America</span><span class="trig-badge">Leadership Changes</span>
+    <div class="field"><b class="fl">What happened:</b> C-suite shuffle: SVP Sandra Phillips retires Jul 31, 2026; Chris Yang expands to Chief Legal Officer; Liz Gibson takes regulatory affairs/sustainability. June US sales up 10.1% (212,793), electrified at 57.4% of volume. Toyota Group also launched an AI/software skills academy.</div>
+    <div class="field"><b class="fl">Business priority signal:</b> Governance refresh plus an aggressive group-wide AI and software capability push amid record electrified mix.</div>
+    <div class="field"><b class="fl">Celonis angle:</b> An electrified majority reshapes parts, service, and delivery processes — Celonis gives TMNA leaders a live process baseline while the group invests in AI skills.</div>
+    <div class="hook">"With electrified vehicles now 57% of volume, which legacy processes — parts, warranty, delivery — are quietly breaking under the new mix?"</div>
+    <div class="src">Source: <a href="https://www.automotivedive.com/news/toyota-north-america-connected-csuite-changes/736864/" target="_blank">Automotive Dive</a> · <a href="https://global.toyota/en/newsroom/corporate/42805724.html" target="_blank">Toyota Global Newsroom</a></div>
+  </div>
 
-</div>
-<div class="noupd"><b>No major update:</b> Hyundai Motor America (record Q1 sales, Fast Company Most Innovative list — positive but no new buying event) · Enterprise Holdings (no material update found this run).</div>
-<div class="evergreen"><b>Evergreen outreach:</b> Every automotive account is being asked "what's your AI ROI?" this quarter. The Forrester TEI stat (383% ROI, 6-month payback) plus one account-specific process metric is a reply-worthy email on any day of the week.</div>
+  <p class="noupdate"><b>No update:</b> Enterprise Holdings (Enterprise Mobility) — no account-specific trigger found this week; industry coverage only.</p>
+
+  <div class="evergreen"><b>Evergreen Outreach:</b> Every account above runs order-to-cash, procure-to-pay, and warranty/service processes on ERPs that were never designed for today's EV mix, cost pressure, or AI ambitions. The always-relevant question: <i>"If you had to prove where one process loses the most money this quarter, could you do it from data — or from opinions?"</i></div>
 </section>
 
-<!-- SECTION 4 -->
+<!-- ══════════════ SECTION 4 ══════════════ -->
 <section id="competitors">
-<div class="sec-title"><div class="badge" style="background:var(--orange)">4</div><h2>Competitor Intel</h2></div>
-<div class="sec-sub">Researched July 7, 2026</div>
-<div class="grid2">
+  <div class="sec-head"><div class="sec-badge" style="background:#c46916">4</div><h2>Competitor Intel</h2></div>
+  <p class="sec-sub">What moved in process intelligence · early July 2026</p>
 
-<div class="card">
-<b style="font-size:18px">SAP Signavio</b> <span class="datechip">May–Jul 2026</span>
-<div class="field" style="margin-top:8px"><b>Confirmed facts:</b> May 2026 release adds Process Networks, Process Atoms, and AI-guided next-best-action; a process simulation capability enters open beta in July 2026 ("what-if" testing on real data). Also pushing "AI agent mining" for agent-autonomy risk.</div>
-<div class="field"><b>Competitive risk:</b> SAP-heavy automotive accounts (most OEMs/distributors) get told process intelligence is "included" in their SAP roadmap.</div>
-<div class="field"><b>Celonis counter:</b> Signavio sees SAP; Celonis mines cross-system reality (SAP + Salesforce + custom DMS/logistics) — and Signavio's own mindshare is slipping (5.8%, down from 8.9% per PeerSpot).</div>
-<div class="disc"><b>Discovery question:</b> "How much of your order-to-delivery process actually lives inside SAP — and who mines the 40% that doesn't?"</div>
-<a class="src" href="https://community.sap.com/t5/technology-blog-posts-by-sap/sap-signavio-may-2026-release-unlock-next-gen-process-intelligence-with-the/ba-p/14400741" target="_blank">Source: SAP Community release notes</a>
-</div>
+  <div class="card" style="margin-bottom:16px">
+    <h3 class="mini" style="display:inline-block">Palantir</h3><span class="datechip">Mar 2026 + ongoing</span>
+    <div class="field"><b class="fl">Confirmed facts:</b> Stellantis expanded its Palantir partnership 5 more years (to 2031), deploying AIP across business functions; Lear Corp credits Foundry/AIP for $30M+ savings in H1 2025 under its IDEA program.</div>
+    <div class="field"><b class="fl">Competitive risk:</b> Palantir is landing marquee automotive logos with an "AI operating system" story — directly in Emily's vertical.</div>
+    <div class="field"><b class="fl">Celonis counter:</b> Palantir deployments are heavy, consultant-led builds; Celonis is purpose-built process intelligence with prebuilt automotive process apps, object-centric data model, and 6-month payback (Forrester TEI).</div>
+    <div class="discovery"><b>Discovery question:</b> "If you've looked at Palantir — how long did they estimate before you'd see your first quantified process improvement, and who does the ongoing engineering?"</div>
+    <div class="src">Source: <a href="https://www.automotiveworld.com/news/palantir-and-stellantis-expand-ai-partnership-to-2031/" target="_blank">Automotive World</a> · <a href="https://www.lear.com/newsroom/palantir-and-lear-announce-five-year-partnership-expansion-to-accelerate-automotive-technology-transformation-ybzjj" target="_blank">Lear</a></div>
+  </div>
 
-<div class="card">
-<b style="font-size:18px">IBM + ServiceNow</b> <span class="datechip">Jun 11, 2026</span>
-<div class="field" style="margin-top:8px"><b>Confirmed facts:</b> Expanded collaboration to "unlock enterprise data for AI at scale" — IBM data/automation capabilities extend ServiceNow Workflow Data Fabric; joint solutions targeting legacy modernization, available H2 2026. Follows ServiceNow's Knowledge 2026 "Autonomous Workforce" launch (May).</div>
-<div class="field"><b>Competitive risk:</b> The "AI-ready data" narrative overlaps directly with Celonis's context-layer positioning, wrapped in two mega-vendor logos.</div>
-<div class="field"><b>Celonis counter:</b> Workflow data ≠ process truth. Celonis builds the object-centric process model across all systems, then feeds any agent platform — including ServiceNow.</div>
-<div class="disc"><b>Discovery question:</b> "If your agents run on workflow data alone, how do they know what the process should look like when work happens outside the ticket?"</div>
-<a class="src" href="https://newsroom.ibm.com/2026-06-11-ibm-and-servicenow-expand-collaboration-to-unlock-enterprise-data-for-ai-at-scale" target="_blank">Source: IBM Newsroom</a>
-</div>
+  <div class="card" style="margin-bottom:16px">
+    <h3 class="mini" style="display:inline-block">SAP Signavio</h3><span class="datechip">May–Jul 2026</span>
+    <div class="field"><b class="fl">Confirmed facts:</b> May 2026 release added Process Networks, Process Atoms, and AI-guided insights; Joule integration hit GA; a process simulation / what-if capability enters open beta in July 2026.</div>
+    <div class="field"><b class="fl">Competitive risk:</b> SAP-shop CIOs hear "good enough, and it's already in your BTP contract."</div>
+    <div class="field"><b class="fl">Celonis counter:</b> Signavio sees SAP; Celonis sees the enterprise — cross-system processes (dealer systems, logistics, Salesforce, custom apps) plus proven value realization, and now an Oracle OCI partnership for non-SAP estates.</div>
+    <div class="discovery"><b>Discovery question:</b> "What share of your order-to-delivery process actually lives inside SAP — and who mines the rest?"</div>
+    <div class="src">Source: <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/sap-signavio-may-2026-release-unlock-next-gen-process-intelligence-with-the/ba-p/14400741" target="_blank">SAP Community, May 2026 release</a></div>
+  </div>
 
-<div class="card">
-<b style="font-size:18px">UiPath</b> <span class="datechip">Jul 2026</span>
-<div class="field" style="margin-top:8px"><b>Confirmed facts:</b> No major new process-mining announcement found this run; market trackers show UiPath Process Mining mindshare at 5.5% (down from 6.6%), with its 2026 story centered on bridging mining findings into agentic automation.</div>
-<div class="field"><b>Competitive risk:</b> Accounts already paying for UiPath RPA hear "you already own mining."</div>
-<div class="field"><b>Celonis counter:</b> UiPath mining exists to feed UiPath bots; Celonis is automation-agnostic and object-centric at enterprise scale.</div>
-<div class="disc"><b>Discovery question:</b> "Is your mining scoped to what your RPA vendor can automate, or to where the business loses the most money?"</div>
-<a class="src" href="https://www.peerspot.com/products/comparisons/sap-signavio-process-intelligence_vs_uipath-process-mining" target="_blank">Source: PeerSpot 2026 comparison data</a>
-</div>
+  <div class="card" style="margin-bottom:16px">
+    <h3 class="mini" style="display:inline-block">Microsoft Power Automate</h3><span class="datechip">Apr–May 2026</span>
+    <div class="field"><b class="fl">Confirmed facts:</b> 2026 Wave 1 shipped object-centric process mining (GA April 2026) and a new Process Intelligence Studio (GA May 2026) with custom KPIs and native Fabric integration.</div>
+    <div class="field"><b class="fl">Competitive risk:</b> "Included in the Microsoft stack" pricing pressure; object-centric mining copies a Celonis differentiator on paper.</div>
+    <div class="field"><b class="fl">Celonis counter:</b> Feature parity isn't outcome parity — Celonis brings the Process Intelligence Graph, industry benchmarks, prebuilt value apps, and an ecosystem (including Microsoft Agent 365 partnership) focused on realized value, not dashboards.</div>
+    <div class="discovery"><b>Discovery question:</b> "Beyond visualizing processes in Fabric, who in your org owns turning that picture into a dollar-quantified fix — and with what playbook?"</div>
+    <div class="src">Source: <a href="https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/" target="_blank">Microsoft 2026 Wave 1 plan</a></div>
+  </div>
 
-</div>
-<div class="evergreen"><b>Evergreen watch:</b> The "context layer for AI" term is now contested ground — IBM/ServiceNow's "AI-ready data" push is the clearest encroachment this month. Anchor on Celonis Context Model (CCM) + Gartner MQ leadership when the term comes up.</div>
-<div class="noupd"><b>No update this run:</b> Microsoft Power Automate · ABBYY · Palantir (no new process-intelligence-specific announcements found).</div>
+  <div class="card" style="margin-bottom:16px">
+    <h3 class="mini" style="display:inline-block">ServiceNow Process Mining</h3><span class="datechip">Apr 9, 2026</span>
+    <div class="field"><b class="fl">Confirmed facts:</b> ServiceNow made its whole portfolio AI-enabled and replaced five license tiers with three AI-native tiers (Foundation/Advanced/Prime); Workflow Data Fabric is now bundled in every tier, and Process Mining moved up to Advanced-and-above.</div>
+    <div class="field"><b class="fl">Competitive risk:</b> Bundling makes "free" process mining show up in ITSM renewals.</div>
+    <div class="field"><b class="fl">Celonis counter:</b> ServiceNow mines ServiceNow; core automotive value (P2P, O2C, warranty) lives in ERP/dealer systems. Also: the repackaging raised effective prices for many modules — a wedge for TCO conversations.</div>
+    <div class="discovery"><b>Discovery question:</b> "Are you planning to run your ERP-based processes through a workflow tool's mining add-on, or through a platform built to mine ERP at scale?"</div>
+    <div class="src">Source: <a href="https://www.crossfuze.com/campaigns/servicenow-pricing-changes-2026" target="_blank">Crossfuze on 2026 pricing</a> · <a href="https://www.servicenow.com/products/process-mining.html" target="_blank">ServiceNow</a></div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <h3 class="mini" style="display:inline-block">UiPath Process Mining</h3><span class="datechip">May 2026</span>
+    <div class="field"><b class="fl">Confirmed facts:</b> UiPath shipped agentic AI on Automation Suite for on-prem/public-sector (May 2026); Maestro orchestration continues to embed process intelligence and KPI monitoring; April 2026 added tenant-level process-mining administration.</div>
+    <div class="field"><b class="fl">Competitive risk:</b> Automation-first accounts may accept "mining as a feature of RPA."</div>
+    <div class="field"><b class="fl">Celonis counter:</b> UiPath optimizes what bots touch; Celonis starts from the end-to-end business process and quantifies value before anything is automated — then orchestrates agents, bots, and people (100+ customers on Orchestration Engine).</div>
+    <div class="discovery"><b>Discovery question:</b> "Before adding more bots or agents, how do you decide which process is even worth automating — and what evidence backs that?"</div>
+    <div class="src">Source: <a href="https://ir.uipath.com/news/detail/446/uipath-automation-suite-delivers-on-premises-agentic-ai-for-the-public-sector" target="_blank">UiPath IR</a> · <a href="https://docs.uipath.com/process-mining/automation-cloud/latest/release-notes/april-2026" target="_blank">release notes</a></div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <h3 class="mini" style="display:inline-block">Pega &amp; Appian — process intelligence + agentic platforms</h3><span class="datechip">2026</span>
+    <div class="field"><b class="fl">Confirmed facts:</b> Pega is marketing off the <a href="https://www.pega.com/gartner-process-intelligence-2026" target="_blank">2026 Gartner Magic Quadrant for Process Intelligence Platforms</a>, unifying process mining, task mining, and modeling with agentic solutions. Appian unveiled new AI capabilities (Agent Studio, Composer, Data Fabric) embedding agents in processes with "process intelligence" monitoring at Appian World 2026.</div>
+    <div class="field"><b class="fl">Competitive risk:</b> BPM/low-code vendors are claiming the "process intelligence" category label, and the new Gartner MQ gives buyers a shortlist where Celonis is compared side-by-side with workflow platforms.</div>
+    <div class="field"><b class="fl">Celonis counter:</b> Pega/Appian mine what runs on their own platforms; Celonis mines the whole enterprise (ERP, dealer systems, logistics, CRM) with an object-centric Process Intelligence Graph and quantified value realization — regardless of where work executes.</div>
+    <div class="discovery"><b>Discovery question:</b> "Does your process visibility cover only what's built in the workflow tool — or every system your order, invoice, and claim actually touch?"</div>
+    <div class="src">Source: <a href="https://www.processexcellencenetwork.com/ai/news/appian-unveils-new-ai-capabilities-to-automate-complex-work-accelerate-app-modernization" target="_blank">PEX Network — Appian</a> · <a href="https://www.pega.com/gartner-process-intelligence-2026" target="_blank">Pega — Gartner MQ 2026</a></div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <h3 class="mini" style="display:inline-block">Context-layer entrants: Snowflake &amp; Atlan</h3><span class="datechip">2026</span>
+    <div class="field"><b class="fl">Confirmed facts:</b> Since Celonis defined the "context layer" with the Context Model launch, data-stack vendors are claiming the term: Snowflake positions Cortex AI as the data-context layer ("your most valuable AI context is your structured business data, already in Snowflake"), and Atlan — a Leader in the 2026 Gartner MQ for Data &amp; Analytics Governance — pitches metadata-based context and "agentic stewardship."</div>
+    <div class="field"><b class="fl">Competitive risk:</b> CIOs may conflate a semantic/metadata layer with operational process context and think their warehouse vendor already covers it.</div>
+    <div class="field"><b class="fl">Celonis counter:</b> Tables and metadata describe data at rest; the Celonis Context Model is a living digital twin of how work actually flows — processes, rules, KPIs, and decisions — which is the context agents need to act, not just to query.</div>
+    <div class="discovery"><b>Discovery question:</b> "Your warehouse knows what your data is — but does anything in your stack know how your order-to-delivery process actually behaves, end to end, right now?"</div>
+    <div class="src">Source: <a href="https://siliconangle.com/2026/01/18/2026-data-predictions-scaling-ai-agents-via-contextual-intelligence/" target="_blank">SiliconANGLE</a> · <a href="https://atlan.com/know/context-layer-for-ai-agents/" target="_blank">Atlan</a></div>
+  </div>
+
+  <div class="evergreen"><b>Evergreen Watch:</b> The competitive set is widening beyond process-mining vendors — any company talking about "process intelligence" or a "context layer for AI" is now in the conversation, from BPM platforms (Pega, Appian) to data-stack players (Snowflake, Atlan). Every competitor is wrapping "process" language around an agentic AI story. Celonis' differentiation holds: system-agnostic process data foundation (Process Intelligence Graph + Context Model), quantified value realization, and orchestration across agents/humans/systems — not a feature buried in someone's platform bundle.</div>
+  <p class="noupdate"><b>No update:</b> IBM Process Mining, ABBYY Vantage — no material announcements found for June–July 2026.</p>
 </section>
 
-<!-- SECTION 5 -->
+<!-- ══════════════ SECTION 5 ══════════════ -->
 <section id="news">
-<div class="sec-title"><div class="badge" style="background:var(--blue)">5</div><h2>Celonis News &amp; ICP Relevance</h2></div>
-<div class="sec-sub">Past week · sourced items only</div>
-<div class="grid2">
-
-<div class="card">
-<span class="tag" style="background:#e8eaf6;color:var(--blue)">Partnership</span>
-<p style="font-weight:700;font-size:16px;margin:8px 0">Celonis + deepset launch sovereign AI platform</p>
-<p style="font-size:14px">Celonis and deepset are building a sovereign AI platform for mission-critical/regulated environments, pairing the Process Intelligence Platform and the new Celonis Context Model (CCM) with deepset's Haystack agent platform — AI agents with full data/model control.</p>
-<div class="disc"><b>ICP angle (CIO):</b> For compliance-sensitive accounts (captive finance like HCA, Hyundai Capital), proof that Celonis-grounded agents can run where data control is non-negotiable.</div>
-<a class="src" href="https://www.eenewseurope.com/en/celonis-and-deepset-launch-sovereign-ai-platform-for-critical-operations/" target="_blank">Source: eeNews Europe</a>
-</div>
-
-<div class="card">
-<span class="tag" style="background:#e8eaf6;color:var(--blue)">Acquisition</span>
-<p style="font-weight:700;font-size:16px;margin:8px 0">Celonis acquires MIT-linked decision intelligence firm Ikigai</p>
-<p style="font-size:14px">Celonis acquired Ikigai to add decision-intelligence/forecasting capability on top of process data — extending from "what happened in the process" to "what to decide next."</p>
-<div class="disc"><b>ICP angle (COO/VP Ops):</b> Predictive decisioning on live process data — e.g., forecasting delivery bottlenecks before they hit dealer allocation.</div>
-<a class="src" href="https://www.computerweekly.com/news/366642978/Celonis-acquires-MIT-linked-decision-intelligence-firm-Ikigai" target="_blank">Source: Computer Weekly</a>
-</div>
-
-<div class="card">
-<span class="tag" style="background:#e8eaf6;color:var(--blue)">Analyst Validation</span>
-<p style="font-weight:700;font-size:16px;margin:8px 0">Forrester TEI: 383% ROI, payback &lt; 6 months, $44.1M benefits</p>
-<p style="font-size:14px">Forrester's Total Economic Impact study of Celonis found a composite customer earned 383% ROI over 3 years with $44.1M in benefits — including $24.5M from sales-order automation (touchless 33%→86%).</p>
-<div class="disc"><b>ICP angle (CFO):</b> This is the exact answer to "prove the ROI before we buy" — lead with it at AutoNation, where AI spend has an explicit kill-switch.</div>
-<a class="src" href="https://www.celonis.com/news/press/celonis-customers-saw-payback-in-6-months-and-383-roi" target="_blank">Source: celonis.com press release</a>
-</div>
-
-<div class="card">
-<span class="tag" style="background:#e8eaf6;color:var(--blue)">Analyst Recognition</span>
-<p style="font-weight:700;font-size:16px;margin:8px 0">2026 Gartner® Magic Quadrant™ for Process Intelligence Platforms</p>
-<p style="font-size:14px">Celonis is promoting the 2026 Gartner MQ for Process Intelligence Platforms; at Celosphere 2026 the company cited 120+ customer "Value Champions" each generating $10M+, totaling $8.1B+ in measured value.</p>
-<div class="disc"><b>ICP angle (CEO/CFO):</b> Category leadership + quantified community value — top-of-deck credibility slide for exec intros.</div>
-<a class="src" href="https://www.celonis.com/insights/reports/gartner-magic-quadrant" target="_blank">Source: celonis.com</a>
-</div>
-
-</div>
+  <div class="sec-head"><div class="sec-badge" style="background:#2d4cb8">5</div><h2>Celonis News &amp; ICP Relevance</h2></div>
+  <p class="sec-sub">Recent, sourced items with the persona who cares</p>
+  <div class="grid2">
+    <div class="card">
+      <span class="tag tag-blue">Product Launch + M&amp;A</span>
+      <h3 class="mini">Context Model launched; Ikigai Labs acquisition</h3>
+      <p style="font-size:13.5px">At Celonis:NEXT 2026, Celonis launched the Celonis Context Model (CCM) — built on the Process Intelligence Graph to give AI agents a living digital twin of operations — and agreed to acquire MIT-linked decision-intelligence firm Ikigai Labs.</p>
+      <div class="discovery"><b>ICP angle — CIO/Chief AI Officer:</b> Answers the #1 objection to enterprise AI: agents lack business context. "Your AI can only act as well as it understands your processes."</div>
+      <p class="src"><a href="https://www.businesswire.com/news/home/20260512279732/en/Celonis-Launches-the-Context-Model-to-Eliminate-Enterprise-AIs-Operational-Blind-Spots-Agrees-to-Acquire-AI-Decision-Intelligence-Leader-Ikigai-Labs" target="_blank">Business Wire, May 12, 2026</a></p>
+    </div>
+    <div class="card">
+      <span class="tag tag-blue">Partnership</span>
+      <h3 class="mini">Oracle OCI + Microsoft Agent 365 partnerships</h3>
+      <p style="font-size:13.5px">Celonis Platform now deploys on Oracle Cloud Infrastructure to de-risk Oracle migrations, and Celonis is a strategic launch partner for Microsoft Agent 365, Microsoft's control plane for governing AI agents at scale.</p>
+      <div class="discovery"><b>ICP angle — CIO/COO:</b> Celonis rides both mega-ecosystems: mine Oracle/SAP estates AND measure return on AI ("RoAI") for Microsoft agent fleets. Strong for OEMs mid-ERP-migration.</div>
+      <p class="src"><a href="https://www.celonis.com/news" target="_blank">Celonis Newsroom</a> · <a href="https://www.processexcellencenetwork.com/process-mining/news/celonis-announces-new-platform-innovations-to-power-ai-driven-composable-enterprises" target="_blank">PEX Network</a></p>
+    </div>
+    <div class="card">
+      <span class="tag tag-orange">Research Report</span>
+      <h3 class="mini">2026 Process Optimization Report: the AI reality check</h3>
+      <p style="font-size:13.5px">Survey of 1,600+ leaders: 85% want to be an "agentic enterprise" within 3 years, but 76% say current processes hold them back; 82% say AI only delivers ROI if it understands how the business runs; 69% of IT leaders say AI isn't hitting expected ROI.</p>
+      <div class="discovery"><b>ICP angle — CFO/COO:</b> Third-party-style ammo for the exact Celonis thesis: fix and contextualize processes first, then AI pays. Great door-opener stat for cold outreach.</div>
+      <p class="src"><a href="https://www.businesswire.com/news/home/20260204723950/en/The-Enterprise-AI-Reality-Check-High-Ambitions-Meet-Operational-Barriers" target="_blank">Business Wire, Feb 4, 2026</a> · <a href="https://www.celonis.com/insights/reports/process-optimization" target="_blank">full report</a></p>
+    </div>
+    <div class="card">
+      <span class="tag tag-teal">Customer Value</span>
+      <h3 class="mini">$10B+ customer value; 383% ROI, 6-month payback</h3>
+      <p style="font-size:13.5px">Celonis customers have realized more than $10 billion in total value via Process Intelligence; a Forrester Total Economic Impact study found 383% ROI over three years with payback in as little as six months. Platform upgrades show 2x load times and 14x processing improvements for early adopters.</p>
+      <div class="discovery"><b>ICP angle — CFO/VP Finance:</b> The value-proof slide: hard ROI benchmarks to counter "another analytics tool" skepticism in cost-cutting accounts like Group 1 and Lucid.</div>
+      <p class="src"><a href="https://www.processexcellencenetwork.com/process-mining/news/forrester-study-celonis-process-intelligence-customers-see-payback-in-6-months-383-percent-roi-in-3-years" target="_blank">PEX Network (Forrester TEI)</a> · <a href="https://www.celonis.com/news/press/global-enterprises-unlock-billions-building-composable-ai-solutions-with-celonis" target="_blank">Celonis press</a></p>
+    </div>
+  </div>
 </section>
 
-<!-- SECTION 6 -->
+<!-- ══════════════ SECTION 6 ══════════════ -->
 <section id="social">
-<div class="sec-title"><div class="badge" style="background:var(--li)">6</div><h2>Social Media Hooks &amp; Video Scripts</h2></div>
-<div class="sec-sub">Sourced data points · July 2026</div>
-<div class="statbar">
-<div class="stat"><div class="num">80.3%</div><div>of enterprise AI projects fail to deliver value</div><div class="src">RAND Corp.</div></div>
-<div class="stat"><div class="num">88%</div><div>of AI agent pilots never reach production</div><div class="src">Anaconda / Forrester</div></div>
-<div class="stat"><div class="num">$2.3T</div><div>lost per year to failed digital transformation</div><div class="src">Gartner-cited industry est.</div></div>
-<div class="stat"><div class="num">383%</div><div>ROI, 6-month payback for Celonis customers</div><div class="src">Forrester TEI</div></div>
-</div>
-<div class="grid2">
+  <div class="sec-head"><div class="sec-badge" style="background:#0a66c2">6</div><h2>Social Media Hooks &amp; Video Scripts</h2></div>
+  <p class="sec-sub">Short-form angles backed by sourced data</p>
 
-<div class="hookcard">
-<span class="tag">Fact-Based</span>
-<div class="hookline">88% of AI agents <em>never make it to production.</em></div>
-<ul class="script">
-<li><b>0–5s:</b> "88% of enterprise AI agents never reach production. Here's why."</li>
-<li><b>5–20s:</b> Companies bolt agents onto messy, undocumented processes and hope.</li>
-<li><b>20–45s:</b> The winners map the process first — AI with context beats AI with vibes. Forrester attributes 41% of failures to unclear success criteria.</li>
-<li><b>45–60s:</b> "Before your next agent pilot: can you draw the process it's automating? If not, start there."</li>
-</ul>
-<div class="fmt">Format: talking head + big stat text overlay at 0s.</div>
-</div>
+  <div class="statbar">
+    <div class="stat"><div class="num">95%</div><div class="cap">of GenAI pilots show no measurable P&amp;L return (<a href="https://sranalytics.io/blog/why-95-of-ai-projects-fail/" target="_blank">MIT NANDA</a>)</div></div>
+    <div class="stat"><div class="num">40%+</div><div class="cap">of agentic AI projects will be canceled by end-2027 (<a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027" target="_blank">Gartner</a>)</div></div>
+    <div class="stat"><div class="num">76%</div><div class="cap">of leaders say their processes hold their AI ambitions back (<a href="https://www.celonis.com/insights/reports/process-optimization" target="_blank">Celonis 2026 report</a>)</div></div>
+    <div class="stat"><div class="num">383%</div><div class="cap">3-yr ROI for Celonis customers, 6-month payback (<a href="https://www.processexcellencenetwork.com/process-mining/news/forrester-study-celonis-process-intelligence-customers-see-payback-in-6-months-383-percent-roi-in-3-years" target="_blank">Forrester TEI</a>)</div></div>
+  </div>
 
-<div class="hookcard">
-<span class="tag">Gap-Based</span>
-<div class="hookline">$2.3 trillion a year — <em>gone.</em></div>
-<ul class="script">
-<li><b>0–5s:</b> "Failed transformation projects burn $2.3T a year. That's not a tech problem."</li>
-<li><b>5–20s:</b> 70% of digital transformations still miss their goals in 2026.</li>
-<li><b>20–45s:</b> The gap isn't tools — it's that nobody can see how work actually flows today.</li>
-<li><b>45–60s:</b> "Fix visibility first. Everything else compounds from there."</li>
-</ul>
-<div class="fmt">Format: text-overlay video with B-roll of factory/office ops.</div>
-</div>
-
-<div class="hookcard">
-<span class="tag">Trend-Based</span>
-<div class="hookline">Tesla just raised AI spend to <em>$25 billion.</em></div>
-<ul class="script">
-<li><b>0–5s:</b> "Tesla is spending $25B on AI this year. Your CFO saw that headline too."</li>
-<li><b>5–20s:</b> Every auto exec is now being asked: what's OUR AI plan — and its ROI?</li>
-<li><b>20–45s:</b> The smart money starts with process intelligence: know where the waste is before pointing AI at it.</li>
-<li><b>45–60s:</b> "AI without process context is expensive guessing. Ask me about the 383% ROI path."</li>
-</ul>
-<div class="fmt">Format: talking head, news-headline screenshot at open.</div>
-</div>
-
-<div class="hookcard">
-<span class="tag">Fact-Based</span>
-<div class="hookline">Payback in 6 months. <em>383% ROI.</em></div>
-<ul class="script">
-<li><b>0–5s:</b> "What if your AI investment paid back in 6 months — audited?"</li>
-<li><b>5–20s:</b> Forrester studied Celonis customers: $44.1M in benefits over 3 years.</li>
-<li><b>20–45s:</b> Biggest lever: touchless sales orders — from 33% to 86% automated.</li>
-<li><b>45–60s:</b> "That's what measured AI looks like. DM me for the study."</li>
-</ul>
-<div class="fmt">Format: text overlay with animated counter for the stats.</div>
-</div>
-
-</div>
-</section>
-
-<!-- SECTION 7 -->
-<section id="bdr">
-<div class="sec-title"><div class="badge" style="background:var(--red)">7</div><h2>BDR Daily Tasks &amp; Campaigns</h2></div>
-<div class="sec-sub">Built only from signals researched in Sections 1 &amp; 3 · 14-day cadence · persona-matched drafts</div>
-<div class="grid2">
-
-<div class="card bdr-card">
-<div class="bdr-day">Monday</div><div class="bdr-acct">Hyundai Capital America</div>
-<div class="cadence"><b>Cadence step:</b> Day 1 — cold email to Johan Swart (CIO) at 1:00 PM local. Queue Day 4 LinkedIn connect referencing the Drotman AI-priority article for Thursday.</div>
-<div class="draftbox">
-<div class="subj">Subject: Jim's 2026 AI mandate — IT's map?</div>
-Johan — saw Jim Drotman's Auto Finance News piece putting AI and platform modernization at the top of HCA's 2026 agenda. Captives that start by mining funding and collections flows find the modernization targets that actually move cost — Forrester pegs Celonis payback at under 6 months, with touchless processing rates jumping from 33% to 86%. Coming from Mercedes-Benz FS, you've seen how much process reality hides across captive systems. Curious — which HCA process would you mine first if you could see it end-to-end tomorrow?
-</div>
-<div class="mt"><b>Multi-thread next:</b> Economic Buyer — search "CFO Hyundai Capital America" on LinkedIn.</div>
-<span class="tag pill-port">Portfolio: Modernization</span>
-</div>
-
-<div class="card bdr-card">
-<div class="bdr-day">Tuesday</div><div class="bdr-acct">Paccar Inc</div>
-<div class="cadence"><b>Cadence step:</b> Day 1 — cold email to Lily Ley (CIO) at 1:00 PM local. <b>⏰ Tuesday 4–5 PM call block:</b> best-window dials to last week's Group 2 contacts (&lt;30-sec voicemails, signal-anchored).</div>
-<div class="draftbox">
-<div class="subj">Subject: Connected-services revenue needs clean processes</div>
-Lily — congrats on the WBC Women Corporate Tech Executives recognition. You've talked publicly about modernizing PACCAR IT to turn connected services into revenue. The pattern we see: connected-truck margins get eaten by the analog processes behind them — parts P2P and warranty flows. Manufacturers mining those with Celonis free working capital fast (Forrester: 383% ROI over 3 years). What's the one back-office process you suspect is quietly taxing Kenworth and Peterbilt's service business?
-</div>
-<div class="mt"><b>Multi-thread next:</b> Technical Evaluator — search "Enterprise Architecture PACCAR" on LinkedIn.</div>
-<span class="tag pill-port">Portfolio: Innovation</span>
-</div>
-
-<div class="card bdr-card">
-<div class="bdr-day">Wednesday</div><div class="bdr-acct">JM Family Enterprises</div>
-<div class="cadence"><b>Cadence step:</b> Day 1 — cold email to John Damalas (CTO) at 1:00 PM local; Day 4 LinkedIn connect to Chad Couch (CIO) referencing his ORBIE finalist recognition.</div>
-<div class="draftbox">
-<div class="subj">Subject: Applied AI needs process context first</div>
-John — congratulations on the CTO move. Your applied-AI track record at Walmart makes JM Family's announcement more than a re-org. One thing we see trip up applied-AI programs (88% of agent pilots never reach production, per Forrester): agents deployed on processes nobody has actually mapped. Southeast Toyota's port-to-dealer flow is exactly the kind of process where Celonis gives AI real context — and where delivery days convert directly to floorplan dollars. What's your take: is JM Family's process data AI-ready today?
-</div>
-<div class="mt"><b>Multi-thread next:</b> End User — search "VP Operations Southeast Toyota Distributors" on LinkedIn.</div>
-<span class="tag pill-port">Portfolio: Innovation</span>
-</div>
-
-<div class="card bdr-card">
-<div class="bdr-day">Thursday</div><div class="bdr-acct">The Friedkin Companies</div>
-<div class="cadence"><b>Cadence step:</b> Day 1 — cold email to Ken Elliott (CDAO) at 1:00 PM local; same day, comment on / share the MIT Tech Review piece before the email lands so the name is warm.</div>
-<div class="draftbox">
-<div class="subj">Subject: Your MIT piece — the missing layer?</div>
-Ken — the MIT Technology Review feature on Friedkin's road to AI readiness was one of the better data-strategy reads this year. One build: AI-ready data tells you what happened; a process context layer tells you how work actually flows — which is what agents need to act safely. That's the layer Celonis adds on top of foundations like yours, and where Gulf States Toyota's port-to-dealer flow holds measurable days of lead time. Where does process context sit on your AI-readiness roadmap?
-</div>
-<div class="mt"><b>Multi-thread next:</b> Champion — search "CIO The Friedkin Group" / "IT Director Gulf States Toyota" on LinkedIn.</div>
-<span class="tag pill-port">Portfolio: Transformation</span>
-</div>
-
-<div class="card bdr-card">
-<div class="bdr-day">Friday</div><div class="bdr-acct">Woodbridge Holdings</div>
-<div class="cadence"><b>Cadence step:</b> Day 1 — cold email into the COO org at 1:00 PM local (no named tech exec yet — see LinkedIn search below). Day 4 LinkedIn connect referencing the Drury expansion news.</div>
-<div class="draftbox">
-<div class="subj">Subject: Six continents, one process standard?</div>
-Hi — Woodbridge's appointment of Bill Drury as President for Asia, Mexico &amp; South America signals real footprint growth. The pattern in multi-plant suppliers: every new region adds process variants, and OEE and procurement discipline drift (a 5-point OEE gap ≈ 5–7% cost disadvantage; manual SPC runs 2–4 FTEs per $100M revenue). Celonis shows plant-by-plant process reality in one view. As the footprint grows, how are you keeping P2P and quality processes consistent across regions?
-</div>
-<div class="mt"><b>Multi-thread next:</b> Economic Buyer — search "CFO Woodbridge" on LinkedIn; also "Director of IT The Woodbridge Group Mississauga".</div>
-<span class="tag pill-port">Portfolio: Modernization / Operational tier</span>
-</div>
-
-</div>
-
-<div class="campaign">
-<b style="font-size:18px;color:var(--navy)">📣 Campaign Corner — Week 28</b>
-<div class="field" style="margin-top:10px"><b>This week's campaign — "Cost-Transformation Plays for Restructuring Accounts":</b> The week's strongest signals are cost-driven: Lucid's 18% workforce cut with a cost-transformation CFO, and U-Haul's $284M profit collapse on fleet-lifecycle costs. Enroll Lucid and U-Haul contacts in a CFO/COO-persona sequence anchored on those events, leading with the Forrester 6-month-payback proof point. Secondary enrollees: AutoNation (explicit AI-ROI kill-switch language fits the same message).</div>
-<div style="margin-top:10px"><b>Cadence cheat sheet:</b></div>
-<div class="cheat"><span>Day 1 · Email (1pm)</span><span>Day 3 · Thread reply + proof point</span><span>Day 4 · LinkedIn connect</span><span>Day 6 · Call (Tue 4–5pm)</span><span>Day 8 · Benchmark email</span><span>Day 10 · LinkedIn engage/DM</span><span>Day 12 · Call #2</span><span>Day 14 · Breakup</span></div>
-<div class="metrics"><span class="mchip">Reply target: 15–25% (vs 1–5% generic)</span><span class="mchip">Best call window: Tue 4–5 PM</span><span class="mchip">5+ threads/account → 45% vs 22% close</span></div>
-<div class="field"><b>Give-to-get asset:</b> A one-page "Fleet Lifecycle Leakage" ROI calculator pre-filled with U-Haul's public FY2026 figures ($186.6M depreciation increase, $117.6M disposal losses) — send as the Day 8 benchmark touch.</div>
-</div>
+  <div class="hookgrid">
+    <div class="hookcard navy">
+      <span class="hbadge">Fact-Based</span>
+      <div class="hookline"><span class="y">95% of AI pilots</span> return nothing. Here's the 5% pattern.</div>
+      <div class="script">
+        <div><b>0–5s:</b> "MIT found 95% of GenAI pilots deliver zero P&amp;L impact."</div>
+        <div><b>5–20s:</b> Companies bolt AI onto broken processes — the AI inherits the chaos.</div>
+        <div><b>20–45s:</b> The 5% that win fix and map the process first, so AI acts with context. That's process intelligence.</div>
+        <div><b>45–60s:</b> "Want to see what your processes would tell an AI? DM me 'context'."</div>
+      </div>
+      <div class="fmt">🎬 Talking head + bold text overlay on the 95% stat</div>
+    </div>
+    <div class="hookcard lkdn">
+      <span class="hbadge">Trend-Based</span>
+      <div class="hookline">Gartner: <span class="y">40% of AI agent projects</span> die by 2027.</div>
+      <div class="script">
+        <div><b>0–5s:</b> "Almost half of agentic AI projects will be canceled. Gartner said so."</div>
+        <div><b>5–20s:</b> Cause of death: cost overruns, unclear value, no risk controls.</div>
+        <div><b>20–45s:</b> Agents need to know your processes, rules, and KPIs — a context layer, not another chatbot.</div>
+        <div><b>45–60s:</b> "Ask me how automotive leaders are giving agents that context."</div>
+      </div>
+      <div class="fmt">🎬 Text-overlay style with headline screenshots as B-roll</div>
+    </div>
+    <div class="hookcard navy">
+      <span class="hbadge">Gap-Based</span>
+      <div class="hookline"><span class="y">85% want an agentic enterprise.</span> 76% admit their processes can't carry it.</div>
+      <div class="script">
+        <div><b>0–5s:</b> "Everyone wants AI agents. Almost nobody's processes are ready."</div>
+        <div><b>5–20s:</b> Celonis surveyed 1,600+ leaders: the gap isn't models — it's messy, fragmented processes.</div>
+        <div><b>20–45s:</b> In automotive: vehicles idle at ports, invoices loop, warranty claims get reworked. Agents can't fix what they can't see.</div>
+        <div><b>45–60s:</b> "First step: an X-ray of how work actually flows. Comment 'X-ray'."</div>
+      </div>
+      <div class="fmt">🎬 Talking head; cut to simple animated process map B-roll</div>
+    </div>
+    <div class="hookcard lkdn">
+      <span class="hbadge">Fact-Based</span>
+      <div class="hookline">Payback in <span class="y">6 months</span>. ROI of <span class="y">383%</span>. Not a typo.</div>
+      <div class="script">
+        <div><b>0–5s:</b> "What if a software category paid for itself twice before your next annual review?"</div>
+        <div><b>5–20s:</b> Forrester studied process intelligence customers: 6-month payback, 383% three-year ROI.</div>
+        <div><b>20–45s:</b> Why: it finds cash you already lost — duplicate payments, idle vehicles, warranty rework — and stops the leak.</div>
+        <div><b>45–60s:</b> "CFO-friendly proof on request. DM 'TEI'."</div>
+      </div>
+      <div class="fmt">🎬 Direct-to-camera, yellow stat overlays, end card with CTA</div>
+    </div>
+  </div>
 </section>
 
 </div>
-<footer>Brief auto-generated · July 7, 2026 · maldoemily.github.io/Celonis-Brief</footer>
+<div class="footer">Brief auto-generated · July 6, 2026 · <a href="https://maldoemily.github.io/Celonis-Brief/" target="_blank">maldoemily.github.io/Celonis-Brief</a></div>
 <script>
-const links=document.querySelectorAll('#nav a');const map={};links.forEach(l=>{map[l.getAttribute('href').slice(1)]=l;});
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const m=map[e.target.id];if(m)m.classList.add('active');}});},{rootMargin:'-30% 0px -60% 0px'});
-document.querySelectorAll('section[id]').forEach(s=>obs.observe(s));
+  const links = document.querySelectorAll('#nav a');
+  const map = {};
+  links.forEach(l => map[l.getAttribute('href').slice(1)] = l);
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const link = map[e.target.id];
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin:'-20% 0px -70% 0px' });
+  document.querySelectorAll('section').forEach(s => obs.observe(s));
 </script>
 </body>
 </html>
